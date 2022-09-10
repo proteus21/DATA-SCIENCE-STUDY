@@ -1,0 +1,94 @@
+Zadanie /Task 1
+Utwórz katalog o nazwie projekt za pomocą polecenia
+Create a directory named project using the command
+:
+mk project
+wejdź do katalogu i utwórz trzy pliki: plik1, plik2, plik3
+go into directory and create three files:
+touch file1
+touch file2
+touch file3
+
+otwórz każdy z plików za pomocą edytora vim i wpisz dowolny tekst
+open each files with  the vim editor and enter in  default text
+
+vim plik1 insert I, type text and use esc : and finish wq
+
+wyświetl zawartość każdego pliku za pomocą polecenia cat
+display contain each files with cat command
+cat file1
+cat file2
+cat file3
+
+Zadanie /Task 2
+Wyświetl posortowaną zawartość katalogu domowego użytkownika (Windows: C:\Users[username], Linux: /home/[username].
+View the sorted contests of th user's home directory
+pwd
+ls or ls -l
+
+
+Zadanie / Task 3
+Wyświetl zawartość dowolnego katalogu rekurencyjnie.
+Display the contents of any directory recursively.
+
+ls -R directory/
+
+Zadanie /Task 4
+Załóż drzewo katalogów (wg poniższego schematu):
+Create tree of directory ( below schema)
+
+mkdir Ameryka
+mkdir Europa
+mkdir Africa
+
+
+Zadanie / Task 5
+Wyświetl zawartość katalogu Ameryka rekurencyjnie aby sprawdzić poprawność hierarchii.
+Display contents America directory recurslivly to check correct of hierarchy
+
+ls - R America/
+
+Zadanie / Task 6
+Będąc w katalogu Kanada załóż plik tekstowy KFC w katalogu Dallas.
+While in the Canada directory, create a KFC text file in the Dallas directory.
+cd America
+cd Canada
+
+touch ../USA/Dallas/KFC.txt 
+
+Zadanie / Task 7
+While in Canada directory, create Acapulco directory inside Maxico directory
+Będąc w katalogu Kanada załóż w katalogu Meksyk katalog Acapulco.
+  /America/Canada
+ mkdir  ../Meksyk/Acapulco  # two dots means subdirectory
+
+
+Zadanie / Task 8
+Będąc w katalogu Kanada   sprawdź zawartość katalogu USA.
+While in Canada directory,check contents USA directory
+/America/CANADA/
+ls -l ../USA
+
+Zadanie / Task 9
+Będąc w katalogu Kanada przekaż listę katalogu głównego do pliku tortilla.txt (przekierowanie do pliku operator >). Plik ten ma znajdować się w folderze Meksyk.
+
+/America/Canada ls  ~/>..Mexico/tortilla.txt
+
+Zadanie / Task 10
+Wyświetl ostatni wiersz pliku tortilla.txt - polecenie tail.
+tail -n 1../Mexico/tortilla.txt
+
+
+Zadanie / Task 11
+Będąc w katalogu Kanada skopiuj plik tortilla.txt do katalogu Dallas.
+America/Canada
+cp .. /Meksyk/tortilla.txt ../USA/Dallas
+
+Zadanie  / Task 12
+Będąc w katalogu Dallas zmień nazwę pliku tortilla.txt na nachos.txt.
+~/America/Kabada 
+ ls 
+mv tortilla.txt nachos.txt
+Zadanie 13
+Usuń katalog Meksyk z całą zawartością.
+rm - rf ../Mexico
