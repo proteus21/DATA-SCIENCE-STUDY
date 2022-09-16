@@ -67,3 +67,36 @@ if __name__=="__main__":
         print(" Total Winner is person 2","win: "+str(results2_sum))
     else:
         print("It is draw")
+
+
+   # Version 2
+   def determine_the_winner(card1, card2):
+    """Wskazuje zwyciezce potyczki w grze wojna.
+
+    :param card1: litera (string) reprezentujaca karte gracza 1.
+    :param card2: litera (string) reprezentujaca karte gracza 2.
+    :return: 0 dla remisu, 1 jesli zwyciezy gracz 1, 2 dla zwyciestwa gracza 2.
+
+    """
+    war_cards = {
+        "1": 1,
+        "2": 2,
+        "3": 3,
+        "4": 4,
+        "5": 5,
+        "6": 6,
+        "7": 7,
+        "8": 8,
+        "9": 9,
+        "10": 10,
+        "J": 11,
+        "D": 12,
+        "K": 13,
+        "A": 14
+    }
+
+    if war_cards[card1] > war_cards[card2]:
+        return 1
+    elif war_cards[card1] < war_cards[card2]:
+        return 2
+    return 0
