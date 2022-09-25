@@ -1,0 +1,54 @@
+--- virtualenv ---
+
+1. zainstaluj virtualenva korzystajac z pip
+How to upgrade pip
+Upgrading pip is again very easy process. Just run the following:
+python -m pip install --upgrade pip
+pip install virtualenva
+
+2. zalóz nowe srodowisko wirtualne (nazwa dowolna); przeszukaj katalog i zobacz z czego sklada sie utworzone srodowisko
+create folder in which will be located virtaul env
+przez cmd
+C:\Users\prote\Downloads\Data Science python\Python exam\1- START\Python Exam\3- Technology\virtualenv>virtualenv env ( gdzie env nazwa folderu wirtualnego)
+created virtual environment CPython3.7.7.final.0-64 in 3529ms
+  creator CPython3Windows(dest=C:\Users\prote\Downloads\Data Science python\Python exam\1- START\Python Exam\3- Technology\virtualenv\env, clear=False, no_vcs_ignore=False, global=False)
+  seeder FromAppData(download=False, pip=bundle, setuptools=bundle, wheel=bundle, via=copy, app_data_dir=C:\Users\prote\AppData\Local\pypa\virtualenv)
+    added seed packages: pip==22.2.2, setuptools==65.3.0, wheel==0.37.1
+  activators BashActivator,BatchActivator,FishActivator,NushellActivator,PowerShellActivator,PythonActivator
+
+ Tworzy siê folder 
+3. uaktywnij w terminalu srodowisko virtualenv:
+ - linux: komenda "source nazwa_srodowiska/bin/activate"
+ - windows: komenda "nazwa_srodowiska/Scripts/activate"
+nalezy wejsc do folderu ktory ( poziom top gdzie jest jest env)
+Aktywacja poprzez komende
+C:\Users\prote\Downloads\Data Science python\Python exam\1- START\Python Exam\3- Technology\virtualenv>.\env\Scripts\activate
+
+(env) C:\Users\prote\Downloads\Data Science python\Python exam\1- START\Python Exam\3- Technology\virtualenv>pip freeze
+
+(env) C:\Users\prote\Downloads\Data Science python\Python exam\1- START\Python Exam\3- Technology\virtualenv>pip install ipython
+
+Aktywacja w Pycharm
+Somehow a small trick worked for me. All you gotta do is change the default terminal from Power shell to CMD.
+
+Open pycharm --> Go to Settings --> Tools --> Terminal
+Change the Shell Path to C:\Windows\system32\cmd.exe from PS
+Check the Activate virtualenv checkbox
+Hit apply and open new terminal
+It's 2021 you don't need to specify the file path or add the environment variable.
+
+Update: It's 2022 and I run into the same issue Fix: Follow the above steps and in addition, make sure you have selected the Your virtual env python.exe as your project python interpreter, and that's it
+
+
+
+4. po lewej stronie od aktualnej sciezki w terminalu powinna sie pojawic nazwa naszego srodowiska w nawiasach
+5. wykonaj polecenie pip freeze i sprawdz czy znajdujesz sie w odizolowanym srodowisku
+6. zainstaluj biblioteke ipython i spróbuj ja uruchomic z terminala w srodowisku wirtualnym
+7. poszukaj w internecie unikalnej bilbioteki pythonowej, której nie masz zainstalowanej na lokalnym systemie i zainstaluj ja w srodowisku virtualenv
+8. uzyj komendy pip freeze, deaktywuj srodowisko i porównaj z lista bibliotek zainstalowanych na maszynie lokalnej (poza srodowiskiem wirtualnym)
+9. aktywuj raz jeszcze Twoje srodowisko, czy zainstalowane wczesniej biblioteki sa widoczne?
+10. zainstaluj w srodowisku biblioteke zewnetrzna numpy (do czego ona sluzy?)
+11. stwórz plik "main.py" poza katalogiem z plikami konfiguracyjnymi Twojego srodowiska - umiesc w nim jedna linijke: import numpy
+12. spróbuj uruchomic plik z poziomu virtualenva (modul powinien sie zaimportowac)
+13. wyjdz raz jeszcze z virtualenva
+14. uruchom Twój plik ponownie - jaki jest wynik?
