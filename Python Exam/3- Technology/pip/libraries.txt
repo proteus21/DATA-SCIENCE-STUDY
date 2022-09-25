@@ -1,0 +1,5 @@
+ipython==7.6.0
+ipython-genutils==0.2.0
+jedi==0.15.1
+requests==2.21.0
+twine==2.0.0

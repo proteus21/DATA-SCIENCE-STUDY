@@ -1,0 +1,18 @@
+--- virtualenv ---
+
+1. zainstaluj virtualenva korzystajac z pip
+2. zalóz nowe srodowisko wirtualne (nazwa dowolna); przeszukaj katalog i zobacz z czego sklada sie utworzone srodowisko
+3. uaktywnij w terminalu srodowisko virtualenv:
+ - linux: komenda "source nazwa_srodowiska/bin/activate"
+ - windows: komenda "nazwa_srodowiska/Scripts/activate"
+4. po lewej stronie od aktualnej sciezki w terminalu powinna sie pojawic nazwa naszego srodowiska w nawiasach
+5. wykonaj polecenie pip freeze i sprawdz czy znajdujesz sie w odizolowanym srodowisku
+6. zainstaluj biblioteke ipython i spróbuj ja uruchomic z terminala w srodowisku wirtualnym
+7. poszukaj w internecie unikalnej bilbioteki pythonowej, której nie masz zainstalowanej na lokalnym systemie i zainstaluj ja w srodowisku virtualenv
+8. uzyj komendy pip freeze, deaktywuj srodowisko i porównaj z lista bibliotek zainstalowanych na maszynie lokalnej (poza srodowiskiem wirtualnym)
+9. aktywuj raz jeszcze Twoje srodowisko, czy zainstalowane wczesniej biblioteki sa widoczne?
+10. zainstaluj w srodowisku biblioteke zewnetrzna numpy (do czego ona sluzy?)
+11. stwórz plik "main.py" poza katalogiem z plikami konfiguracyjnymi Twojego srodowiska - umiesc w nim jedna linijke: import numpy
+12. spróbuj uruchomic plik z poziomu virtualenva (modul powinien sie zaimportowac)
+13. wyjdz raz jeszcze z virtualenva
+14. uruchom Twój plik ponownie - jaki jest wynik?
