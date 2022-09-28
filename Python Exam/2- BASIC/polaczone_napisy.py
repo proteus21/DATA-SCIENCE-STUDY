@@ -23,5 +23,8 @@ def merge_strings(string1, string2):
     :return: napis zlozony z podanych jako argumenty.
 
     """
-    pass
+    return str(string1) + str(string2)
+
+if __name__ == '__main__':
+    print(merge_strings("adam ", "ewa"))
 
