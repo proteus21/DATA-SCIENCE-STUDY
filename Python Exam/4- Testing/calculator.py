@@ -23,14 +23,17 @@ class Calculator:
 
     def divide(self):
         return (self.value_x / self.value_y)
-class TestCalculator(unittest.TestCase):
-    def test_additional(self):
 
-        self.assertEqual(additional(1,2), 3)
+class TestCalculator(unittest.TestCase):
+
+    def setUp(self):
+        self.calc = Calculator(1, 2)
+
+    def test_additional(self):
+        self.assertEqual(self.calc.additional(), 3)
 
     def test_substract(self):
-
-        self.assertEqual(substrack(3,1), 2)
+        self.assertEqual(self.calc.substrack(), -1)
 
 
 if __name__ == '__main__':
