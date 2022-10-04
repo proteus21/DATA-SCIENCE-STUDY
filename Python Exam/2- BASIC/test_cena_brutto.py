@@ -1,35 +1,33 @@
 import unittest
-from ile_parzystych import count_even_numbers
+from cena_netto import calculate_brutto_prize
 
 
+class TestNettoPrize(unittest.TestCase):
 
+    def test_one_product_with_10_percent_tax(self):
+        grocery_list = {"apples": (12, 10)}
+        prize = calculate_brutto_prize(grocery_list)
+        self.assertEqual(prize, 10.8)
 
-class TestEvenNumbers(unittest.TestCase):
+    def test_one_product_with_zero_percent_tax(self):
+        grocery_list = {"apples": (12, 0)}
+        prize = calculate_brutto_prize(grocery_list)
+        self.assertEqual(prize, 12)
 
-    def test_few_numbers_from_the_list_are_even(self):
-        numbers = [3, 6, 1, 1, 8, 3, 4]
-        evens_amount = count_even_numbers(numbers)
-        self.assertEqual(evens_amount, 3)
+    def test_one_product_with_100_percent_tax(self):
+        grocery_list = {"apples": (12, 100)}
+        prize = calculate_brutto_prize(grocery_list)
+        self.assertEqual(prize, 12)
 
-    def test_all_numbers_from_the_list_are_even(self):
-        numbers = [2, 4, 6, 8, 10]
-        evens_amount = count_even_numbers(numbers)
-        self.assertEqual(evens_amount, 5)
+    def test_two_products_with_different_percent_tax(self):
+        grocery_list = {"apples": (12, 10), "milk": (4, 20)}
+        prize = calculate_brutto_prize(grocery_list)
+        self.assertEqual(prize, 14)
 
-    def test_no_even_numbers_in_the_list(self):
-        numbers = [55, 7, 19, 21]
-        evens_amount = count_even_numbers(numbers)
-        self.assertEqual(evens_amount, 0)
-
-    def test_no_numbers_in_the_list_and_no_evens(self):
-        numbers = []
-        evens_amount = count_even_numbers(numbers)
-        self.assertEqual(evens_amount, 0)
-
-    def test_numbers_with_zero_inside_the_list(self):
-        numbers = [3, 16, 0, 1, 4, 0, 23]
-        evens_amount = count_even_numbers(numbers)
-        self.assertEqual(evens_amount, 4)
+    def test_no_product_prize(self):
+        grocery_list = {}
+        prize = calculate_brutto_prizee(grocery_list)
+        self.assertEqual(prize, 0)
 
 
 if __name__ == '__main__':
