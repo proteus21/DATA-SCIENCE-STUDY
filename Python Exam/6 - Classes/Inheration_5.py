@@ -5,13 +5,11 @@
 4 - Define a testBelongs() method of the class which allows to test whether a point A(x, y) belongs to the circle C(O, r) or not.
 '''
 
-
-
 from math import pi
 
 class Circle:
     def __init__(self,a,b,r):
-        self.center=(a,b)
+        #self.center=(a,b)
         self.a=a
         self.b=b
         self.r= r
