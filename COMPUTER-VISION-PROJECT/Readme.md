@@ -15,7 +15,7 @@ Computer cam recognation with CascadeClassifier
 
 Source dataset contains a two folders annotations and images.
 In my analyse are modified and named as training and test folder.
-Annotations and images is join to one folder from 1 to 410 as training folder.
+Annotations and images are join to one folder from 1 to 410 as training folder.
 The rest from 410 to the end is testing and production
 
 
