@@ -1,0 +1,1 @@
+<annotation><folder /><filename>Cars224.png</filename><size><width>480</width><height>360</height><depth>3</depth></size><object><name>license plate</name><bndbox><xmin>126</xmin><ymin>40</ymin><xmax>277</xmax><ymax>90</ymax></bndbox></object></annotation>
