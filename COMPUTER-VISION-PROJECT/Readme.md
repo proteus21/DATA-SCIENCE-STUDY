@@ -1,4 +1,4 @@
-# PROJECT: Car License Plate Detection AND Recognation
+# PROJECT: Car License Plate Detection
 ### SOURCE DATASET: https://www.kaggle.com/datasets/andrewmvd/car-plate-detection
 ### DATA SETS : 433 images with annotation in PASCAL VOC Format
 
@@ -8,9 +8,9 @@ Main goal:
 
 Detection model to localize the car license plate
 
+Future task:
 Recognation car license plate via OCR  text method 
-
-Computer cam recognation with CascadeClassifier 
+Computer cam detection with CascadeClassifier 
 
 
 Source dataset contains a two folders annotations and images.
