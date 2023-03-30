@@ -9,7 +9,9 @@ Main goal:
 Detection model to localize the car license plate
 
 Future task:
+
 Recognation car license plate via OCR  text method 
+
 Computer cam detection with CascadeClassifier 
 
 
